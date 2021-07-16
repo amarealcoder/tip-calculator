@@ -95,7 +95,7 @@ input:focus {
   /* border: 2px solid orangered; */
 }
 .grid-btns {
-  width: 100%;
+  width: 40%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 10px;
@@ -177,7 +177,7 @@ input:focus {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media (min-width: 200px) and (max-width: 500px) {
+@media (min-width: 150px) and (max-width: 500px) {
   h1 {
     margin-top: 3rem;
   }
@@ -193,7 +193,7 @@ input:focus {
   .grid-btns {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 12px;
-    width: 80%;
+    width: 60%;
   }
   .section-left {
     width: 60%;
