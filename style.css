@@ -190,7 +190,18 @@ input:focus {
     width: 100%;
     margin: 2rem 0 0 0;
   }
+  /* .hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin: 80px auto auto auto;
+    border-radius: 20px;
+    background-color: var(--White);
+  } */
   .grid-btns {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 12px;
     width: 40px;
@@ -200,14 +211,14 @@ input:focus {
     height: 40%;
   }
   .custom-btn {
-    width: 140px;
+    width: 100px;
   }
   .btn {
-    padding: 10px 52px;
+    padding: 10px 35px;
     /* width: 100%; */
   }
   .section-right {
-    margin-top: 90px;
+    margin-top: 105px;
     width: 60%;
     height: 30%;
   }
