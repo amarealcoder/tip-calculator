@@ -193,7 +193,7 @@ input:focus {
   .grid-btns {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 12px;
-    width: 60%;
+    width: 40px;
   }
   .section-left {
     width: 60%;
