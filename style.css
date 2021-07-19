@@ -87,12 +87,17 @@ h1 {
 input:focus {
   outline: none;
 }
-.error {
-  visibility: hidden;
+.error-span {
+  /* visibility: hidden; */
   color: orangered;
   float: right;
-
-  /* border: 2px solid orangered; */
+  margin-left: 1rem;
+}
+.error {
+  border: 2px solid orangered;
+}
+.success {
+  border: 2px solid green;
 }
 .grid-btns {
   width: 40%;
@@ -152,6 +157,14 @@ input:focus {
   font-size: 8px;
   color: var(--Dark-grayish-cyan);
   display: block;
+}
+.amount,
+.total {
+  color: var(--Dark-cyan);
+  display: block;
+  float: right;
+  margin-top: -2rem;
+  font-size: 20px;
 }
 .reset-btn {
   width: 100%;
