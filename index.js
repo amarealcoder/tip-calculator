@@ -6,24 +6,6 @@ const tipAmount = document.querySelector(".amount");
 const tipTotal = document.querySelector(".total");
 const gridButtons = document.querySelector(".grid-btns");
 
-// function validateInputs(inputs) {
-//   inputs.forEach((input) => {
-//     if (input.value.trim() === "") {
-//       showError();
-//       console.log("error");
-//     } else {
-//       showSuccess();
-//       console.log("success");
-//     }
-//   });
-// }
-// function showError() {
-//   document.querySelector(".input-2").classList.add("error");
-//   // secondInputField.;
-// }
-// function showSuccess() {
-//   document.querySelector("input").classList.add("success");
-// }
 function calcBill(amount, people) {
   return (parseFloat(amount / people) + parseFloat(tipAmountPerPerson)).toFixed(
     2
@@ -31,9 +13,6 @@ function calcBill(amount, people) {
 }
 
 function calcTip(percentageNum, amount, people) {
-  // let percentAmount = ((percentageNum / 100) * amount).toFixed(2);
-  // let percentBillPerPerson = amount + percentAmount / 2;
-  // let totalPerPerson = (((percentageNum / 100) * amount) / people).toFixed(2);
   tipAmountPerPerson = (((percentageNum / 100) * amount) / people).toFixed(2);
   tipAmount.textContent = `$${tipAmountPerPerson}`;
   tipTotal.textContent = `$${calcBill(amount, people)}`;
@@ -64,48 +43,3 @@ resetBtn.addEventListener("click", function (e) {
   secondInputField.value = "";
   customNumber.value = "";
 });
-
-// function calcPercentage(percentageNum, amount) {
-//   return ((percentageNum / 100) * amount).toFixed(2);
-// }
-
-// const amount = firstInputField.value.trim();
-// const customized = customBtn.value.trim();
-// const numPeople = secondInputField.value.trim();
-
-// //Check to match the target element clicked
-// if (e.target.classList.contains("btn")) {
-//   const btnId = e.target.id;
-//   console.log(btnId);
-
-//   if (btnId === "five") {
-//     let fivePercent = calcPercentage(5, amount);
-//     tipAmount.textContent = `$${fivePercent}`;
-//     let fivePercentTotal = calcTotal(customized, amount, numPeople);
-//     tipTotal.textContent = `$${fivePercentTotal}`;
-//   }
-//   if (btnId === "ten") {
-//     let tenPercent = calcPercentage(10, amount);
-//     tipAmount.textContent = `$${tenPercent}`;
-//     let tenPercentTotal = calcTotal(10, amount, numPeople);
-//     tipTotal.textContent = `$${tenPercentTotal}`;
-//   }
-//   if (btnId === "fifteen") {
-//     let fifteenPercent = calcPercentage(15, amount);
-//     tipAmount.textContent = `$${fifteenPercent}`;
-//     let fifteenPercentTotal = calcTotal(15, amount, numPeople);
-//     tipTotal.textContent = `$${fifteenPercentTotal}`;
-//   }
-//   if (btnId === "twenty-five") {
-//     let twentyFivePercent = calcPercentage(25, amount);
-//     tipAmount.textContent = `$${twentyFivePercent}`;
-//     let twentyFivePercentTotal = calcTotal(25, amount, numPeople);
-//     tipTotal.textContent = `$${twentyFivePercentTotal}`;
-//   }
-//   if (btnId === "fifty") {
-//     let fiftyPercent = calcPercentage(50, amount);
-//     tipAmount.textContent = `$${fiftyPercent}`;
-//     let fiftyPercentTotal = calcTotal(50, amount, numPeople);
-//     tipTotal.textContent = `$${fiftyPercentTotal}`;
-//   }
-// }
